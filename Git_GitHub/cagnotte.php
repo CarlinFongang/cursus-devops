@@ -1,2 +1,1 @@
-Une cagnotteUne super cagnotte !
-Une cagnotte
+Une cagnotte !
