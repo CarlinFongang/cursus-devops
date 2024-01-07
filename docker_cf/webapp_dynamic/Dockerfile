@@ -10,10 +10,11 @@ RUN apt-get update && \
     rm -rf /var/www/html/*
 
 # Clone le dépôt Git
-RUN git clone https://github.com/CarlinFongang/cursus-devops.git .
+RUN git clone https://github.com/CarlinFongang/cursus-devops.git /var/www/html
+#RUN git clone https://github.com/CarlinFongang/cursus-devops.git .
 
 # Copie le contenu du répertoire local
-ADD ./cursus-devops/docker_cf/webapp/static-website-example/ /var/www/html/
+#ADD ./cursus-devops/docker_cf/webapp/static-website-example/ /var/www/html/
 
 # Expose le port 80
 EXPOSE 80
