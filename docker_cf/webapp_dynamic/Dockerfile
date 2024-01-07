@@ -10,7 +10,7 @@ RUN apt-get update && \
     rm -rf /var/www/html/*
 
 # Clone le dépôt Git
-RUN git clone git@github.com:CarlinFongang/static-website-example.git /var/www/html
+RUN git clone https://github.com/CarlinFongang/static-website-example.git /var/www/html
 #RUN git clone https://github.com/CarlinFongang/cursus-devops.git .
 
 # Copie le contenu du répertoire local
