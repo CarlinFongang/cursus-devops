@@ -15,4 +15,4 @@ service nginx startd
 
 
 #Conteneur2
-apt-get update && apt-get install nano -y
+apt-get update && apt-get install nano -y 
