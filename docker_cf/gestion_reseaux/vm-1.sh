@@ -1,3 +1,10 @@
-#MAINTAINER fongangcarlin@gmail.co
+#MAINTAINER fongangcarlin@gmail.com
+#!/bin/bash
+
 #création d'un conteneur docker et ajout au sous réseau sharenetwork
-docker run --name ubuntu1 --network sharenetwork -d ubuntu:18.04 /bin/bash
+echo "Création du conteneur..."
+docker run -it --name ubuntu1 --network sharenetwork ubuntu:18.04 /bin/bash
+
+#vérification des conteneur en cours
+echo "Conteneurs en cours d'exécution :"
+docker ps

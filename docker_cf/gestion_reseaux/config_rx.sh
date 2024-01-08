@@ -1,8 +1,6 @@
 #MAINTAINER fongangcarlin@gmail.com
 #!/bin/bash
 
-#!/bin/bash
-
 # Nom du réseau
 NETWORK_NAME="sharenetwork"
 
