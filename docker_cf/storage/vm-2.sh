@@ -3,7 +3,7 @@
 
 #creation d'un conteneur docker et ajout au sous reseau sharenetwork
 echo "Creation du conteneur..."
-docker run -it --name ubuntu2 -v share:/tmp -d -p 8081:80 ubuntu:18.04 /bin/bash
+docker run -it --name ubuntu2 -v share:/var/www/html -d -p 8081:80 ubuntu:18.04 /bin/bash
 
 
 #demarrage du conteneur
