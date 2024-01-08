@@ -1,4 +1,7 @@
 #se loger avec la commande "docker login"
+docker login
+
+#récupération de l'image sur le dockerhub
 docker pull carlfg/webapp:v2
 
 #création d'un conteneur à partir de l'image
