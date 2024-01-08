@@ -2,8 +2,17 @@
 docker exec -it ubuntu1 /bin/bash
 
 #paquet requit pour le fonctionnement du site 
-apt-get install git -y && apt-get install nano -y && apt-get install inginx
-service nginx start
+apt-get update
+apt-get install git -y && apt-get install nano -y 
 
-#creation du wdir /tmp/toto.txt
+#Conteneur1
+#clone du depo static-website
+rm -rf /var/www/html/
 git clone https://github.com/CarlinFongang/static-website-example.git /var/www/html
+
+apt-get install nginx -y
+service nginx startd
+
+
+#Conteneur2
+apt-get update && apt-get install nano -y
