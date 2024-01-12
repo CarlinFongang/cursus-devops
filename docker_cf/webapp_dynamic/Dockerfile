@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Carlinfg (fongangcarlin@gmail.com)
+LABEL maintainer="Carlinfg <fongangcarlin@gmail.com>"
 
 # Définit le répertoire de travail
 WORKDIR /var/www/html/
