@@ -1,5 +1,5 @@
-#MAINTAINER fongangcarlin@gmail.com
 #!/bin/bash
+#MAINTAINER fongangcarlin@gmail.com
 
 #creation d'un conteneur docker et ajout au sous reseau sharenetwork
 echo "Creation du conteneur..."
