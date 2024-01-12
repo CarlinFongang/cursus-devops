@@ -14,11 +14,12 @@ RUN yum update && \
 
 # Création d'un dossier de données en tant que volume
 VOLUME ["/data"]
+RUN -v share:/data/
 
 # Clone le dépôt Git dans le répertoire dans la repertoire en cours
 RUN git clone https://github.com/diranetafen/student-list.git
 
-# Copie du code de l'API du répertoire courant vers la racine
+# Copie du code source de l'API du répertoire courant vers la racine
 ADD student-list/simple_api/* /
 
 # Expose le port 80
@@ -26,3 +27,5 @@ EXPOSE 5000
 
 # Démarre l'application Flask
 ENTRYPOINT ["python", "./student_age.py"]
+
+docker run -it --name test -v share:data -d -p 8090:80 centos:centos7.6.1810

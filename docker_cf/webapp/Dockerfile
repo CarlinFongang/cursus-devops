@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Carlinfg (fongangcarlin@gmail.com)
+LABEL maintainer="Carlinfg <fongangcarlin@gmail.com>"
 RUN apt-get update
 RUN apt-get install -y nginx
 EXPOSE 80
