@@ -21,7 +21,7 @@ Period : January at March 2024
 
 Sunday the 14th, march 2023
 
-<img src="https://data5tb-my.sharepoint.com/personal/carlin_data5tb_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcarlin%5Fdata5tb%5Fonmicrosoft%5Fcom%2FDocuments%2FCarlinfg%5Flinkedin%2Epng&parent=%2Fpersonal%2Fcarlin%5Fdata5tb%5Fonmicrosoft%5Fcom%2FDocuments&ga=1" width="50" height="50" alt="Carlin Fongang"> 
+<img src="https://media.licdn.com/dms/image/C4E03AQEUnPkOFFTrWQ/profile-displayphoto-shrink_400_400/0/1618084678051?e=1710979200&v=beta&t=sMjRKoI0WFlbqYYgN0TWVobs9k31DBeSiOffAOM8HAo" width="50" height="50" alt="Carlin Fongang"> 
 LinkedIn : https://www.linkedin.com/in/carlinfongang/
 
 
