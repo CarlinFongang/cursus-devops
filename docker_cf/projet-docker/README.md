@@ -8,7 +8,9 @@
 
 
 ------------
+
 <p align="center">
+
 Firstname : Carlin
 
 Surname : FONGANG
@@ -17,11 +19,15 @@ For Eazytraining's 17th DevOps Bootcamp
 
 Period : January at March 2024
 
-Sunday the 14th, march 2023
+Sunday the 14th, March 2023
 
 <img src="https://media.licdn.com/dms/image/C4E03AQEUnPkOFFTrWQ/profile-displayphoto-shrink_400_400/0/1618084678051?e=1710979200&v=beta&t=sMjRKoI0WFlbqYYgN0TWVobs9k31DBeSiOffAOM8HAo" width="50" height="50" alt="Carlin Fongang"> 
-LinkedIn : https://www.linkedin.com/in/carlinfongang/
+
+LinkedIn : [https://www.linkedin.com/in/carlinfongang/](https://www.linkedin.com/in/carlinfongang/)
+
 </p>
+
+
 
 ## Application
 
