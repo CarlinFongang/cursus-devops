@@ -1,7 +1,7 @@
 # student-list project
 <p align="center">
   <a href="https://github.com/diranetafen/student-list.git">
-    <img src="https://user-images.githubusercontent.com/18481009/84582395-ba230b00-adeb-11ea-9453-22ed1be7e268.jpg" alt="Crédit image : eazytraining.fr" width="300" height="300">
+    <img src="https://user-images.githubusercontent.com/18481009/84582395-ba230b00-adeb-11ea-9453-22ed1be7e268.jpg" alt="Crédit image : eazytraining.fr" width="400" height="300">
   </a>
 </p>
 <p align="center">Please find the specifications by clicking <a href="https://github.com/diranetafen/student-list.git">here</a></p>
