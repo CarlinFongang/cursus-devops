@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #build image
-docker build -t webapp:v1.0 .
+docker build -t webapi:v1.0 .
 
 #deploy container
 docker run -it --name webapi1 -d -p 5000:80 webapi:v1.1 /bin/bash

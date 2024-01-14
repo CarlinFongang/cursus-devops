@@ -1,4 +1,5 @@
 #!/bin/bash
+# shellcheck disable=SC1017
 #MAINTAINER fongangcarlin@gmail.com
 
 #creation d'un conteneur docker et ajout au sous reseau sharenetwork
