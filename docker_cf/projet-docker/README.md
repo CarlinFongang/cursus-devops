@@ -2,6 +2,13 @@
 Please find the specifications by clicking [here](https://github.com/diranetafen/student-list.git "here")
 !!["Crédit image : eazytraining.fr"](https://user-images.githubusercontent.com/18481009/84582395-ba230b00-adeb-11ea-9453-22ed1be7e268.jpg)
 
+Please find the specifications by clicking [here](https://github.com/diranetafen/student-list.git "here")
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/18481009/84582395-ba230b00-adeb-11ea-9453-22ed1be7e268.jpg" alt="Crédit image : eazytraining.fr" width="300">
+</div>
+
+
 ------------
 
 Firstname : Carlin
