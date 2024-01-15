@@ -14,7 +14,6 @@ services:
     networks:
       - pozos_network
 
-
   api:
     container_name: api
     image: webapi:v1.3
