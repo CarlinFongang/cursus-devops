@@ -1,0 +1,28 @@
+version: '3.1'
+services:
+  web:
+    container_name: web
+    image: php:apache
+    depends_on:
+      - api
+    ports:
+      - "80:80"
+    volumes:
+      - "${PWD}/website:/var/www/html"
+    env_file:
+      - .env
+    networks:
+      - pozos_network
+
+
+  api:
+    container_name: api
+    image: webapi:v1.3
+    volumes:
+      - "${PWD}/simple_api/student_age.json:/data/student_age.json"
+    networks:
+      - pozos_network
+
+networks:
+  pozos_network:
+    name: pozos_network
