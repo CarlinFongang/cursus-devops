@@ -64,12 +64,12 @@ git clone https://github.com/diranetafen/student-list.git
 1. Redaction du fichier docker-compose
 ![Alt text](img/image-12.png)
 2. Lancement de docker compose : 
-docker compose up -f studentlist-compose.yml up -d
+`docker compose up -f studentlist-compose.yml up -d`
 ![Alt text](img/image-8.png)
 ![Alt text](img/image-9.png)
 
 3. Lancement du test et reponse du front : 
-curl localhost:8008
+`curl localhost:8008`
 ![Alt text](img/image-10.png)
 
 4. Test de l'interface web
