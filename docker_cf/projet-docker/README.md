@@ -49,11 +49,11 @@ git clone https://github.com/diranetafen/student-list.git
 ![Alt text](img/image-4.png)
 
 5. Run d'un conteneur avec la nouvelle image pour test : 
- docker run -it --name test -d -p 8000:5000 -v ./student_age.json:/data/student_age.json webapi:v1.3
+ `docker run -it --name test -d -p 8000:5000 -v ./student_age.json:/data/student_age.json webapi:v1.37`
 ![Alt text](img/image-5.png)
 
 6. Test : 
-curl -u toto:python -X GET http://localhost:8000/pozos/api/v1.0/get_student_ages
+`curl -u toto:python -X GET http://localhost:8000/pozos/api/v1.0/get_student_ages`
 ![Alt text](img/image-6.png)
 
 7. Push de l'image testé sur un registre public (dockerhub)
