@@ -81,7 +81,7 @@ the list of files that will be generated/used in this project:
 ````
 git clone https://github.com/diranetafen/student-list.git
 ls
-```
+````
 > ![1-docker images](https://github.com/CarlinFongang/cursus-devops/blob/master/docker_cf/projet-docker/img/image-1.png)
 
 
