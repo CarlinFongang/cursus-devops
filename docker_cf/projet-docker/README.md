@@ -78,67 +78,98 @@ the list of files that will be generated/used in this project:
 
 ## Build and test
 1. Project repo clone
+````
 git clone https://github.com/diranetafen/student-list.git
+ls
+```
 > ![1-docker images](https://github.com/CarlinFongang/cursus-devops/blob/master/docker_cf/projet-docker/img/image-1.png)
+
 
 2. Préparation du Dockerfile
 ````
 cd student-list/simple_api/
-nano Dockerfile
+ls
+nano Dockerfile #edition du Dockerfile
 ````
 >![Alt text](img/image-2.png)
 
 3. Build de l'image api depuis le WDir student-list/simple_api/
+````
+docker build -t webapi:v1.3 .
+docker images
+````
 >![Alt text](img/image-3.png)
 
 
 4. Run d'un conteneur avec la nouvelle image pour test : 
- `docker run -it --name test -d -p 8000:5000 -v ./student_age.json:/data/student_age.json webapi:v1.3`
+ ````
+ docker run -it --name test -d -p 8000:5000 -v ./student_age.json:/data/student_age.json webapi:v1.3
+ docker ps
+ ````
 >![Alt text](img/image-5.png)
 
-5. Test : 
-`curl -u toto:python -X GET http://localhost:8000/pozos/api/v1.0/get_student_ages`
+5. Test du conteneur API : 
+````
+curl -u toto:python -X GET http://localhost:8000/pozos/api/v1.0/get_student_ages
+````
 >![Alt text](img/image-6.png)
 
-### hors contexte du projet
-7. tag de l'image pour la préparation du push vers un registry public
+### outside the project context
+6. image tag to prepare push to public registry
 `docker tag 306aaa1bfb1f carlfg/webapi:v1.3`
 >![Alt text](img/image-4.png)
 
-8. Push de l'image sur un registre public (dockerhub)
-`docker push carlfg/webapi:v1.3`
+7. Push image to public registry (dockerhub)
+````
+docker login
+docker push carlfg/webapi:v1.3
+````
 >![Alt text](img/image-7.png)
 
 
 ## Deployment
-1. Redaction du fichier docker-compose
->![Alt text](img/image-12.png)
-2. Lancement de docker compose : 
-`docker compose up -f studentlist-compose.yml up -d`
+1. Redaction of the docker-compose file from the user directory
+````
+cd /home/$USR
+nano studentlist_compose.yml
+````
+![Alt text](img/image-17.png)
+````
+
+
+2. Launching docker compose :
+````
+docker compose up -f studentlist-compose.yml up -d
+docker ps
+````
 >![Alt text](img/image-8.png)
 >![Alt text](img/image-9.png)
 
-3. Lancement du test et reponse du front : 
+3. Test launch and front-end answer :
 `curl localhost:8008`
 >![Alt text](img/image-10.png)
 
-4. Test de l'interface web
+4. Check web interface
 >![Alt text](img/image-11.png)
 
 ## Private Registry
 1. Setup of registry-compose to deploy the services
-
+![Alt text](img/image-12.png)
 2. Lauch of docker compose 
 
->![Alt text](img/image-12.png)
+>![Alt text](img/image-16.png)
 
-3. Interface web du registre fonctionnel
+
+3. Functional register web interface
 >![Alt text](img/image-13.png)
 
-4. Tag et push de l'image précédement crée
+4. Tag and push of previously created image
 >![Alt text](img/image-14.png)
 
-5. Vérification du registre local via l'interface web
+5. Check local registry via web interface
 >![Alt text](img/image-15.png)
 
 ## This concludes my Docker mini-project run report.
+During this project, I had to build the image integrating the POZOS company's API service to facilitate its deployment in a test or production environment, I configured the Application we / API server networks as well as the private registry container networks, I created and mounted persistent volumes and deployed microservices using docker-compose. 
+
+This project was an enriching experience that enabled me to strengthen my technical skills and gain a better understanding of the principles of mciroservices.
