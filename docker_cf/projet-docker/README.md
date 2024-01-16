@@ -89,6 +89,6 @@ curl localhost:8008
 ![Alt text](img/image-14.png)
 
 5. Vérification du registre local via l'interface web
-![Alt text](image-15.png)
+![Alt text](img/image-15.png)
 
 ## This concludes my Docker mini-project run report.
