@@ -6,7 +6,7 @@ services:
     depends_on:
       - api
     ports:
-      - "80:80"
+      - "8008:80"
     volumes:
       - "${PWD}/website:/var/www/html"
     env_file:
@@ -17,6 +17,7 @@ services:
   api:
     container_name: api
     image: webapi:v1.3
+    build: /simple_api
     volumes:
       - "${PWD}/simple_api/student_age.json:/data/student_age.json"
     networks:

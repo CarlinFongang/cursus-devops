@@ -48,7 +48,7 @@ git clone https://github.com/diranetafen/student-list.git
 ![Alt text](img/image-4.png)
 
 5. Run d'un conteneur avec la nouvelle image pour test : 
- docker run --name test -d -p 8000:5000 -v ./student_age.json:/data/student_age.json webapi:v1.3 /bin/bash
+ docker run -it --name test -d -p 8000:5000 -v ./student_age.json:/data/student_age.json webapi:v1.3
 ![Alt text](img/image-5.png)
 
 6. Test : 
@@ -67,7 +67,12 @@ docker compose up -f studentlist-compose.yml up -d
 ![Alt text](img/image-8.png)
 ![Alt text](img/image-9.png)
 
-3. run docker compp
+3. run test de reponse du front
+curl localhost:8008
+![Alt text](img/image-10.png)
+
+4. Test de l'interface web
+![Alt text](img/image-11.png)
 
 
 ## This concludes my Docker mini-project run report.
