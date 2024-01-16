@@ -86,59 +86,59 @@ git clone https://github.com/diranetafen/student-list.git
 cd student-list/simple_api/
 nano Dockerfile
 ````
-![Alt text](img/image-2.png)
+>![Alt text](img/image-2.png)
 
 3. Build de l'image api depuis le WDir student-list/simple_api/
-![Alt text](img/image-3.png)
+>![Alt text](img/image-3.png)
 
 
 4. Run d'un conteneur avec la nouvelle image pour test : 
  `docker run -it --name test -d -p 8000:5000 -v ./student_age.json:/data/student_age.json webapi:v1.3`
-![Alt text](img/image-5.png)
+>![Alt text](img/image-5.png)
 
 5. Test : 
 `curl -u toto:python -X GET http://localhost:8000/pozos/api/v1.0/get_student_ages`
-![Alt text](img/image-6.png)
+>![Alt text](img/image-6.png)
 
 ### hors contexte du projet
 7. tag de l'image pour la préparation du push vers un registry public
 `docker tag 306aaa1bfb1f carlfg/webapi:v1.3`
-![Alt text](img/image-4.png)
+>![Alt text](img/image-4.png)
 
 8. Push de l'image sur un registre public (dockerhub)
 `docker push carlfg/webapi:v1.3`
-![Alt text](img/image-7.png)
+>![Alt text](img/image-7.png)
 
 
 ## Deployment
 1. Redaction du fichier docker-compose
-![Alt text](img/image-12.png)
+>![Alt text](img/image-12.png)
 2. Lancement de docker compose : 
 `docker compose up -f studentlist-compose.yml up -d`
-![Alt text](img/image-8.png)
-![Alt text](img/image-9.png)
+>![Alt text](img/image-8.png)
+>![Alt text](img/image-9.png)
 
 3. Lancement du test et reponse du front : 
 `curl localhost:8008`
-![Alt text](img/image-10.png)
+>![Alt text](img/image-10.png)
 
 4. Test de l'interface web
-![Alt text](img/image-11.png)
+>![Alt text](img/image-11.png)
 
 ## Private Registry
 1. Setup of registry-compose to deploy the services
 
 2. Lauch of docker compose 
 
-![Alt text](img/image-12.png)
+>![Alt text](img/image-12.png)
 
 3. Interface web du registre fonctionnel
-![Alt text](img/image-13.png)
+>![Alt text](img/image-13.png)
 
 4. Tag et push de l'image précédement crée
-![Alt text](img/image-14.png)
+>![Alt text](img/image-14.png)
 
 5. Vérification du registre local via l'interface web
-![Alt text](img/image-15.png)
+>![Alt text](img/image-15.png)
 
 ## This concludes my Docker mini-project run report.
