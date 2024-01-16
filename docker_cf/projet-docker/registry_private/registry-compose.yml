@@ -1,0 +1,29 @@
+version: '3.1'
+services:
+  docker-registry-ui:
+    container_name: web_registry
+    image: joxit/docker-registry-ui
+    depends_on:
+      - registry
+    ports:
+      - "8010:80"
+    environment:
+      - NGINX_PROXY_PASS_URL=http://private-registry:5000
+      - DELETE_IMAGES=true
+      - REGISTRY_TITLE=private-registry
+    networks:
+      - pozos_network
+
+  registry:
+    container_name: private-registry
+    image: registry:2
+    ports:
+      - "5000:5000"
+    networks:
+      - pozos_network
+    restart: always
+
+networks:
+    pozos_network:
+        external:
+            name: pozos_network

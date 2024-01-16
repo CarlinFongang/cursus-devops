@@ -61,19 +61,34 @@ curl -u toto:python -X GET http://localhost:8000/pozos/api/v1.0/get_student_ages
 
 
 ## Deployment
-1. Redaction du docker-compose.yml
-
-2. Lancement de docker compose
+1. Redaction du fichier docker-compose
+![Alt text](img/image-12.png)
+2. Lancement de docker compose : 
 docker compose up -f studentlist-compose.yml up -d
 ![Alt text](img/image-8.png)
 ![Alt text](img/image-9.png)
 
-3. run test de reponse du front
+3. Lancement du test et reponse du front : 
 curl localhost:8008
 ![Alt text](img/image-10.png)
 
 4. Test de l'interface web
 ![Alt text](img/image-11.png)
 
+## Private Registry
+1. Setup of registry-compose to deploy the services
+
+2. Lauch of docker compose 
+
+![Alt text](img/image-12.png)
+
+3. Interface web du registre fonctionnel
+![Alt text](img/image-13.png)
+
+4. Tag et push de l'image précédement crée
+![Alt text](img/image-14.png)
+
+5. Vérification du registre local via l'interface web
+![Alt text](image-15.png)
 
 ## This concludes my Docker mini-project run report.
